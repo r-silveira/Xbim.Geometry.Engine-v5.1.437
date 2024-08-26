@@ -1,4 +1,6 @@
-[This is a modified version of Xbim.Geometry v5.1.437]
+This is a modified version of Xbim.Geometry v5.1.437
+
+
 
 Branch | Build Status  | MyGet | NuGet
 ------ | ------- | --- | --- |
