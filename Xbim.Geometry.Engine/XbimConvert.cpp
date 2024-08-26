@@ -679,16 +679,19 @@ namespace Xbim
 
 		double  XbimConvert::GetZValueOrZero(IIfcCartesianPoint^ point)
 		{			
-			if (point->Dim == dimensions3D) return point->Z; else return 0.0;
+			if (point == nullptr) return 0.0;
+			else if (point->Dim == dimensions3D) return point->Z; else return 0.0;
 		}
 
 		double  XbimConvert::GetZValueOrZero(IIfcDirection^ dir)
 		{
+			if (dir == nullptr) return 0.0;
 			if (dir->Dim == dimensions3D) return dir->Z; else return 0.0;
 		}
 
 		double  XbimConvert::GetZValueOrZero(IIfcVector^ vec)
 		{
+			if (vec == nullptr) return 0.0;
 			if (vec->Dim == dimensions3D) return vec->Orientation->Z; else return 0.0;
 		}
 
