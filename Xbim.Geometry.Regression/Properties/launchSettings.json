@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "XbimRegression": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\Data\\Ifc\\archicad.txt\"",
+      "nativeDebugging": true
+    }
+  }
+}
